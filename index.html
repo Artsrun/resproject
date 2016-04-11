@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resproject</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="style.css"/>
+        <!--        <link rel="stylesheet" media="only screen and(min-width:320px)and
+                      (max-width:568px)" href="mobile.css"/>
+                <link rel="stylesheet" media="only screen and(min-width:768px)and
+                      (max-width:980px)" href="tablet.css"/>-->
+        <script src="jquery1.js"></script>
+        <script>
+            var showWidth = 1;
+            if (showWidth === 1) {
+                $(window).load(function () {
+
+                    $(window).resize(function () {
+                        var width = $(window).width();
+                        $("#output_width").html("Window width is " + width);
+                    });
+                });
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="output_width"></div>
+        <div id="conteiner">
+            <div id="mainHeader">
+                <img id="logo" src="logo.png"/>
+                <div class="mainNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">About Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+                <div id="content">
+                    <div class="article1">
+                        <div class="articleHeader">
+                            <h2 class="title"><a href="#">First Post </a> </h2>
+                            <span>Created By: Artsrun Hakobyan </span>
+                        </div>
+                        <p>If you’re an interaction designer, it’s likely you’ve
+                            already made a storyboard or flow, or designed some characters 
+                            for personas. This is a wee jump away from that, to the realm of 
+                            storytelling and navigating human emotions through characters 
+                            who may or may not be human. Similar medium and skills, 
+                            different content.It’s not a client deliverable but something
+                            that stands by itself, and you’ve nobody’s criteria to meet 
+                            except those that exist in your imagination!
+                        </p>
+                        <a class="readMore" href="#">Read more</a>
+                    </div>
+
+                    <div class="article2">
+                        <div class="articleHeader">
+                            <h2 class="title"><a href="#">Second Post </a> </h2>
+                            <span>Created By: Artsrun Hakobyan </span>
+                        </div>
+                        <p>If you’re an interaction designer, it’s likely you’ve
+                            already made a storyboard or flow, or designed some characters 
+                            for personas. This is a wee jump away from that, to the realm of 
+                            storytelling and navigating human emotions through characters 
+                            who may or may not be human. Similar medium and skills, 
+                            different content.It’s not a client deliverable but something
+                            that stands by itself, and you’ve nobody’s criteria to meet 
+                            except those that exist in your imagination!
+                        </p>
+                        <a class="readMore" href="#">Read more</a>
+                    </div>
+                </div>
+                <div id="sideBar">
+                    <div class="block" > 
+                        <h2>Top Sidebar</h2>
+                        <p> 
+                            It’s not a client deliverable but something
+                            that stands by itself, and you’ve nobody’s criteria to meet 
+                            except those that exist in your imagination!
+                        </p>
+                    </div>
+
+                    <div class="block" > 
+                        <h2>Mid Sidebar</h2>
+                        <p> 
+                            It’s not a client deliverable but something
+                            that stands by itself, and you’ve nobody’s criteria to meet 
+                            except those that exist in your imagination!
+                        </p>
+                    </div>
+
+                    <div class="block" > 
+                        <h2>Bottom Sidebar</h2>
+                        <p> 
+                            It’s not a client deliverable but something
+                            that stands by itself, and you’ve nobody’s criteria to meet 
+                            except those that exist in your imagination!
+                        </p>
+                    </div>
+
+                </div>
+
+               </div>
+            <div class="clr"></div>
+            <div id="footer">
+                <p>Copyright &copy; 2016 Resproject</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+body{
+    background: lightgrey url(sos.png) repeat;
+    font-size: 90%;
+    font-family: arial ,sans-serif;
+    line-height: 1.7 em;
+    text-align: left;
+    color:gray;
+    margin: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color:#781a26;
+}
+a:hover{
+    color:#666666;
+}
+h2{
+    color:#781a26; 
+}
+.clr{
+    clear:both;
+}
+
+#conteiner{
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    clear:both;
+
+}
+
+#mainHeader .mainNav{
+    background: #882433;
+    border-radius: 5px;
+    border:1px #c13046 solid;
+    height: 40px;
+}
+#mainHeader .mainNav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+#mainHeader .mainNav li{
+    color:#ffffff;
+    display:inline-block;
+    float: left;
+    margin-right: 3px;
+
+}
+#mainHeader .mainNav li a{
+    color:#ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 20px;
+
+}
+#mainHeader .mainNav li a:hover{
+    background: #efeadd;
+    color:#666666; 
+    border-radius: 5px;
+}
+
+#logo{
+    width: 45%;
+    margin:10px 0;
+}
+#content{
+    width: 70%;
+    float:left;
+    overflow: auto;
+}
+#content .article1,.article2{
+    border-radius: 5px;
+    background: white;
+    overflow: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#content .article1 span{
+    font-style: italic;
+    color:black;
+}
+#content .article2 span{
+    font-style: italic;
+    color:black;
+}
+#content a.readMore{
+    display:inline-block;
+    float:right;
+    color:lightgray;
+    padding: 5px 9px;
+    background:#c130446;
+    border-radius: 5px;
+
+}
+#content a.readMore:hover{
+    background: black;
+}
+#sideBar{
+    width: 30%;
+    float:left;
+
+}
+.block{
+	padding:10px 15px;
+	border-radius:5px;
+	background:white;
+	margin:10px 0 0 10px;
+}
+#footer{
+	background:#882433;
+	height:40px;
+	border:1ps solid #c130446;
+	border-radius:5px;
+	
+}
+#footer p{
+	color:white;
+	margin:0;
+	padding-top:10px;
+	text-align:center;
+}
+/* tablet ipad*/
+
+
+@media only screen and (min-width : 768px) and (max-width : 960px){
+	#conteiner {
+		width:96%;
+	}
+	#logo{
+		margin:auto;
+		display:block;
+		width:70%;
+	}
+	#content{
+		width:100%;
+		float:none;
+	}
+	#sideBar{
+		width:100%;
+		float:none;
+	}
+	.block{
+		margin-left:0;
+	}
+}
+/*small tablets*/
+ @media only screen and (min-width : 569px) and (max-width : 767px){
+	 #conteiner{
+		 width:96%;
+		 
+	 }
+	 #logo{
+		margin:auto;
+		display:block;
+		width:65%;
+	}
+	#mainHeader .mainNav{
+    display:block;
+	overflow:hidden;
+    height: auto;
+	width:99%;
+}
+#mainHeader .mainNav ul{
+   
+    padding:2% 1%;
+	text-align:center;
+	width:98%;
+
+}
+#mainHeader .mainNav li{
+    display:block;
+    float: none;
+    margin-right:0;
+    width:100%;
+   border-bottom: 1px solid #a3293b;
+}
+#mainHeader .mainNav li a{
+    margin-bottom:2px;
+	text-align:center;
+  
+
+ }
+ #mainHeader .mainNav li a:hover{
+	 display:block;
+ }
+ #content{
+		width:100%;
+		float:none;
+	}
+	#sideBar{
+		width:100%;
+		float:none;
+	}
+	.block{
+		margin-left:0;
+	}
+ }
